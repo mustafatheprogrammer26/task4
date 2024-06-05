@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Experassion</title>
+    <style>
+        body{
+            color: #ffffffff;
+            background-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        table{
+            margin-left: 450px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+<h3>SubjectTotalMarks ObtainedMarks Percentage</h3>
+
+
+    <script>
+let sub = prompt("Type your 1st Subject Name");
+let sub2 = prompt("Type your 2nd Subject Name");
+let sub3 = prompt("Type your 3rd Subject Name");
+
+let totalMarksEach = 100;
+
+
+let mar = parseInt(prompt("Enter the obtained marks for " + sub));
+let mar2 = parseInt(prompt("Enter the obtained marks for " + sub2));
+let mar3 = parseInt(prompt("Enter the obtained marks for " + sub3));
+
+  let totalMarksObtained = mar + mar2 + mar3;
+  let totalMarks = totalMarksEach * 3;
+  let percentage = (totalMarksObtained / totalMarks) * 100;
+
+//result
+  document.write("<table border='1'>");
+  document.write("<tr><th>Subject</th><th>Obtained Marks</th><th>Total Marks</th></tr>");
+  document.write("<tr><td>" + sub + "</td><td>" + mar + "</td><td>" + totalMarksEach + "</td></tr>");
+  document.write("<tr><td>" + sub2 + "</td><td>" + mar2 + "</td><td>" + totalMarksEach + "</td></tr>");
+  document.write("<tr><td>" + sub3 + "</td><td>" + mar3 + "</td><td>" + totalMarksEach + "</td></tr>");
+  document.write("<tr><td colspan='2'>Total Marks Obtained</td><td>" + totalMarksObtained + "</td></tr>");
+  document.write("<tr><td colspan='2'>Percentage</td><td>" + percentage.toFixed(2) + "%</td></tr>");
+  document.write("</table>");
+    </script>
+</body>
+</html>
+   
